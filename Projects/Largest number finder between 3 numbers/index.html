@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(24, 23, 23);
+        padding: 50px;
+      }
+      input {
+        background-color: rgb(58, 53, 53);
+        outline: none;
+        border: 2px solid rgb(81, 81, 223);
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+      }
+      input::placeholder {
+        color: white;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      #btn {
+        background-color: rgb(56, 56, 182);
+        outline: none;
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+      }
+      #btn:hover{
+        background-color: rgb(89, 89, 217);
+      }
+      .maindiv {
+        border: 2px solid rgb(38, 214, 38);
+        width: 300px;
+        border-radius: 10px;
+        border: 2px solid rgb(38, 214, 38);
+        padding: 30px;
+      }
+      .result {
+        border: 2px solid rgb(38, 214, 38);
+        width: 300px;
+        border-radius: 10px;
+        border: 2px solid rgb(38, 214, 38);
+        padding: 30px;
+        color: white;
+        font-size: 20px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 50px;
+      }
+      #result2{
+        color: rgb(137, 137, 198);
+        font-weight: bold;
+        font-size: 50px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Enter three numbers to know the lergest in between</h1>
+    <div class="container">
+      <div class="maindiv">
+        <form>
+          <input
+            id="firstNum"
+            type="text"
+            placeholder="Eter your first number"
+          />
+          <input
+            id="secondNum"
+            type="text"
+            placeholder="Eter your second number"
+          />
+          <input
+            id="thirdNum"
+            type="text"
+            placeholder="Eter your third number"
+          />
+          <div id="btn">Submit</div>
+        </form>
+      </div>
+      <div class="result">
+        <div>
+          <p>The largest number is</p>
+          <p id="result2">--</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
