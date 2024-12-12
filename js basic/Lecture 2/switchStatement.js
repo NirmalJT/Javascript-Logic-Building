@@ -27,5 +27,5 @@ if (isNaN(marks) || marks < 0 || marks > 100) {
       Grade = "F";
       break;
   }
-  console.log(`You got ${marks} and grade ${Grade}`);
+  console.log(`You got ${marks} and grade  ${Grade}`);
 }
