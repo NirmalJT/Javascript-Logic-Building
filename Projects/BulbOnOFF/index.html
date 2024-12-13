@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb On Off</title>
+    <style>
+      .BulbContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+      }
+      .Btn {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 30px;
+        background-color: rgb(96, 96, 238);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .offBtn {
+        background-color: rgb(223, 87, 87);
+      }
+      .offBtn:hover {
+        background-color: rgb(234, 37, 37);
+      }
+      .onBtn:hover {
+        background-color: rgb(61, 61, 231);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="BulbContainer">
+      <img id="img"
+        src="https://www.w3schools.com/js/pic_bulboff.gif"
+        alt="Bulb Off imeges"
+        width="130px"
+      />
+    </div>
+    <div class="btn">
+      <button id="on" class="onBtn Btn">On</button>
+      <button id="off" class="offBtn Btn">Off</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
