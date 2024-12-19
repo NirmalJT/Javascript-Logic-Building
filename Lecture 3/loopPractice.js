@@ -16,3 +16,4 @@ while (userNumber !== gameNumber) {
   userNumber = prompt("You entered the wrong number Guess again");
 }
 alert("Congratulation you entered the right number");
+
