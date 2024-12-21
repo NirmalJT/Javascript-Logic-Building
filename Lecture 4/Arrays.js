@@ -23,3 +23,9 @@ console.log(MarvelHeros.length);
 for (let index = 1; index < MarvelHeros.length; index++) {
   console.log(`Element no ${index} is ${MarvelHeros[index - 1]}`);
 }
+
+//print the element of the array using for of array
+
+for (let MarvelHero of MarvelHeros) {
+  console.log(MarvelHero);
+}
