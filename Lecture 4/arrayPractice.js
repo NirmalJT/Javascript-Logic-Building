@@ -16,7 +16,7 @@ for (let price of prices) {
   let discountedPrice = price / 10;
   console.log(discountedPrice);
   index++;
-  prices[index - 1] = discountedPrice;
+  prices[index - 1] -= discountedPrice;
 }
 console.log(
   `The array after applying 10% discounted on the products are ${prices}`
@@ -27,6 +27,6 @@ let itemPrices = [250, 645, 300, 900, 50];
 
 for (let i = 0; i < itemPrices.length; i++) {
   let Price10D = itemPrices[i] / 10;
-  itemPrices[i] = Price10D;
+  itemPrices[i] -= Price10D;
 }
 console.log(`The array of prices after 10% discount is ${itemPrices}`);
