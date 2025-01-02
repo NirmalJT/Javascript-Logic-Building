@@ -31,7 +31,35 @@ cities.forEach((val, idx, arr) => {
 //
 //
 //
-// Where there is callback function they are called HOF/HOM 
+// Where there is callback function they are called HOF/HOM
 //
 //
-// Array map method
+// Array map method Creates a new array with the results of some operation. The value its callback returns are used to form new array
+let newArr = [34, 765, 78, 954, 34];
+
+newArr.map((val, idx, arr) => {
+  console.log(val, idx, arr);
+});
+//it is similar like forEach but return a new array
+let numbers = newArr.map((val) => {
+  return val ** 2;
+});
+console.log(numbers);
+
+//filter method it used to filter a array eliments based on some condition it also create a new array
+
+let findEven = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let evenNumbers = findEven.filter((val) => {
+  return val % 2 == 0;
+});
+//it will create a new array of even numbers
+console.log(evenNumbers);
+//
+//
+//
+//reduce method performs some operations & reduces the array to a single value it returns that single value
+let num = [1, 2, 3, 4, 5, 6, 76, 7];
+const output = num.reduce((previous, current) => {
+  return previous + current;
+});
+console.log(output);
