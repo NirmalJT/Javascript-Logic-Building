@@ -19,7 +19,7 @@ document.getElementById("peragraph").innerText =
 //getElementsByClassName returns a html collection it is like a array
 let innerData = document.getElementsByClassName("peragraph_class");
 for (let i = 0; i < innerData.length; i++) {
-  innerData[i].innerText =
+  innerData[i].innerText = 
     "i am change by javascript using getElementsByClassName";
 }
 //getElementsByTagName also returns a html collection
