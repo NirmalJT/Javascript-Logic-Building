@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        padding: 70px;
+        background-color: aqua;
+        border: 2px solid red;
+        width: 100px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+    <script>
+      let boxes = document.querySelectorAll(".box");
+      // boxes[0].innerText="New unique value is 1"
+      // boxes[1].innerText="New unique value is 2"
+      // boxes[2].innerText="New unique value is 3"
+      let idx = 0;
+      for (box of boxes) {
+        box.innerText = `New unique value is ${idx + 1} `;
+        idx++;
+      }
+    </script>
+  </body>
+</html>
