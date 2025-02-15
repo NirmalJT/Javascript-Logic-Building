@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventLishner Practice problem</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      p {
+        font-size: 25px;
+        width: 60vw;
+        text-align: justify;
+        margin: auto;
+      }
+      div {
+        display: flex;
+        justify-content: space-around;
+      }
+      button {
+        border: none;
+        padding: 5px 20px;
+        background-color: rgb(111, 111, 241);
+        border-radius: 10px;
+        font-size: large;
+        font-weight: bold;
+      }
+      .darkText {
+        color: white;
+      }
+      .darkBody {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Hello this is my EventLishner JS Practice</h1>
+      <button>Change Mode</button>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus
+      placeat, quia quos maiores itaque perspiciatis amet provident assumenda
+      quae! Ut sequi, ipsa sunt recusandae explicabo molestias nostrum a in
+      laudantium, alias inventore placeat et ipsam reprehenderit. Dignissimos,
+      ut corrupti rem deleniti in delectus natus voluptatum eum adipisci illum
+      laboriosam nihil, enim quidem eaque quibusdam consequatur blanditiis vitae
+      doloribus, aut deserunt suscipit. Esse ab facere aut quaerat earum maiores
+      perferendis fugiat expedita iusto consequatur, quis voluptatibus libero
+      suscipit pariatur accusantium? Quia voluptatem distinctio ipsam
+      laudantium, quo reiciendis provident vero autem aspernatur nulla quod
+      nesciunt vitae assumenda molestias accusantium nobis possimus iste eaque
+      itaque atque eos fugit numquam minima omnis? Molestias assumenda cumque
+      obcaecati eius tempore. Voluptatum, corporis. Similique, atque! Autem ea,
+      velit corrupti quod officiis soluta blanditiis magni, tenetur eligendi
+      earum sunt, possimus cupiditate doloremque sit dignissimos mollitia quo.
+      Eum natus esse ullam cumque odio a veritatis quasi assumenda nulla
+      architecto necessitatibus voluptatibus sapiente reprehenderit vel eos,
+      placeat quam ipsa aliquam quidem voluptatum! Ab nulla odio adipisci
+      debitis quos nihil asperiores suscipit optio id hic tempora a error
+      blanditiis sunt officia ullam voluptate, perspiciatis harum aut.
+      Voluptates nulla quod illum magni natus ea rem culpa accusamus, nemo,
+      dolorum pariatur, incidunt eligendi ratione temporibus nihil quibusdam
+      voluptate veritatis repellat? Vero officiis totam blanditiis veritatis ex
+      deleniti earum ullam, doloremque at facere similique aperiam est
+      reiciendis, consectetur officia doloribus non omnis exercitationem? Nemo
+      animi, nihil sequi ratione aperiam nulla, suscipit aut eaque eveniet a
+      reprehenderit incidunt quisquam perspiciatis laborum perferendis nam?
+      Voluptate in veniam asperiores ipsam ab, voluptatum sapiente aliquam
+      voluptatem enim placeat omnis nam eaque nostrum praesentium fuga, vero
+      molestiae, fugiat blanditiis deserunt distinctio laudantium beatae hic?
+      Possimus delectus voluptatum beatae! Corporis quas reiciendis, saepe eius
+      aliquid, enim rem praesentium quidem expedita commodi, deserunt quae? Quia
+      minima amet numquam autem adipisci.
+    </p>
+    <script>
+      let darkBtn = document.querySelector("button");
+      let currMode = "light";
+      darkBtn.addEventListener("click", () => {
+        if (currMode === "light") {
+          currMode = "dark";
+          document.querySelector("h1").setAttribute("class", "darkText");
+          document.querySelector("p").setAttribute("class", "darkText");
+          document.querySelector("button").setAttribute("class", "darkText");
+          document.querySelector("body").setAttribute("class", "darkBody");
+        } else {
+          currMode = "light";
+          document.querySelector("h1").setAttribute("class", "");
+          document.querySelector("p").setAttribute("class", "");
+          document.querySelector("button").setAttribute("class", "");
+          document.querySelector("body").setAttribute("class", "");
+        }
+        console.log(currMode);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline even handling in javascript</title>
+    <style>
+      button {
+        background-color: rgb(80, 80, 230);
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+      }
+      div {
+        background-color: rgb(243, 106, 106);
+        width: 130px;
+        height: 140px;
+        margin: 10px;
+        border-radius: 10px;
+
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- // it is called inline event handling it is a bad way cause it makes
+    confusing and make the html file bigger -->
+    <button
+      onclick="console.log('Hello button was clicked') ,alert('you clicked')"
+    >
+      Click me!
+    </button>
+    <button
+      ondblclick="console.log('Hello button was clicked') ,alert('you clicked')"
+    >7
+      Click me double!
+    </button>
+    <div onmouseover="console.log('Hello you hover me'),alert('you hover me') ">
+      hover me!
+    </div>
+  </body>
+</html>
