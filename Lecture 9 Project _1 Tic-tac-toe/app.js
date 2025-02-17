@@ -50,6 +50,20 @@ const showWinner = (winner) => {
   msgContainer.classList.remove("hide");
   msg.innerText = `Congratulation ,Winner is ${winner}`;
 };
+const handleDraw = () => {
+  let isDraw = true;
+  for (let box of boxes) {
+    if (box.innerText === "") {
+      isDraw = false;
+      break;
+    }
+  }
+  if (isDraw) {
+    msgContainer.classList.remove("hide");
+    msg.innerText = "It is a Draw Start a New Game";
+  }
+};
+
 const checkWinner = () => {
   for (let pattern of winnerList) {
     let posVal1 = boxes[pattern[0]].innerText;
@@ -57,12 +71,12 @@ const checkWinner = () => {
     let posVal3 = boxes[pattern[2]].innerText;
     if (posVal1 != "" && posVal2 != "" && posVal3 != "") {
       if (posVal1 === posVal2 && posVal2 === posVal3) {
-        console.log(`winner is ${posVal1}`);
         showWinner(posVal1);
         disabledGame();
       }
     }
   }
+  handleDraw();
 };
 
 newBtn.addEventListener("click", () => {
