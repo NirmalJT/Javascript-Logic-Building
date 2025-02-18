@@ -65,18 +65,22 @@ const handleDraw = () => {
 };
 
 const checkWinner = () => {
+  let isWinner = false;
   for (let pattern of winnerList) {
     let posVal1 = boxes[pattern[0]].innerText;
     let posVal2 = boxes[pattern[1]].innerText;
     let posVal3 = boxes[pattern[2]].innerText;
     if (posVal1 != "" && posVal2 != "" && posVal3 != "") {
       if (posVal1 === posVal2 && posVal2 === posVal3) {
+        isWinner = true;
         showWinner(posVal1);
         disabledGame();
       }
     }
   }
-  handleDraw();
+  if (isWinner === false) {
+    handleDraw();
+  }
 };
 
 newBtn.addEventListener("click", () => {
