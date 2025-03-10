@@ -24,3 +24,4 @@ let fortuner = new car();
 // fortuner.setBrand("toyota");
 let bmw = new car("bmw", 12);
 let lexas = new car("lexas", 13);
+//
