@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(151, 214, 237);
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-container {
+  background-color: #0be49b;
+  border: 2px solid transparent;
+  width: 400px;
+  height: 550px;
+  border-radius: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  box-shadow: rgba(46, 233, 240, 0.4) 5px 5px, rgba(46, 188, 240, 0.3) 10px 10px,
+    rgba(46, 104, 240, 0.2) 15px 15px, rgba(46, 179, 240, 0.1) 20px 20px,
+    rgba(46, 201, 240, 0.05) 25px 25px;
+}
+.input-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+.input-section input {
+  background-color: rgb(255 255 255 / 44%);
+  width: 250px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+}
+.search-icon {
+  background-color: rgb(255 255 255 / 44%);
+  width: 30px;
+  height: 30px;
+  border-radius: 35px;
+}
+::placeholder {
+  color: gray;
+  padding-left: 20px;
+}
+.input-section svg {
+  width: 25px;
+  position: relative;
+  bottom: 36px;
+  left: 2px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: px;
+}
+.weather-info svg {
+  width: 200px;
+  position: relative;
+  top: 30px;
+}
+.additional-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+}
+.additional-info :nth-child(1) {
+  width: 30px;
+}
+.additional-info :nth-child(3) {
+  width: 30px;
+}
+.location {
+  font-weight: bolder;
+}
+.temperature {
+  font-weight: bolder;
+  font-size: 30px;
+}
+.humidity-value {
+  font-weight: bolder;
+}
+.search-icon:hover {
+  background-color: rgb(96, 131, 176);
+  cursor: pointer;
+}
